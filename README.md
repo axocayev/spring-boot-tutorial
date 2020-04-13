@@ -1,3 +1,2 @@
-# spring-boot
-spring-boot tutorial  
-I will explain Spring boot step by step by examples.
+# spring-boot tutorial
+I will explain Spring Boot features step by step by examples.
