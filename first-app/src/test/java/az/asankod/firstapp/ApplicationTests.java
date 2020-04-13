@@ -1,4 +1,4 @@
-package codecentrum.com.firstapp;
+package az.asankod.firstapp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
