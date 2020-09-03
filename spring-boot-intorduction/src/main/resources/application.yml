@@ -1,0 +1,8 @@
+server:
+  port: 9944
+spring:
+  application:
+    name: HrApp
+  activemq:
+    packages:
+      trusted:

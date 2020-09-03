@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.min.css}"  >
+
+
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="navbar">
+        <div class="navbar-btn">TEst</div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Author</td>
+            <td>Genre</td>
+            <td>Status</td>
+            <td>cdate</td>
+            <td>udate</td>
+            <td colspan="2">Action</td>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="book:${books}">
+            <td th:text="${book.id}"/>
+            <td th:text="${book.name}"/>
+            <td th:text="${book.author}"/>
+            <td th:text="${book.genre}"/>
+            <td th:text="${book.createdAt}"/>
+            <td th:text="${book.updatedAt}"/>
+            <td>
+                <span th:if="${book.status == '0'}" th:text="Taken"/>
+                <span th:if="${book.status == '1'}" th:text="Available"/>
+            </td>
+            <td><a th:href="@{/book/update(id=${book.id}) }">Update </a></td>
+            <td><a th:href="@{/book/delete(id=${book.id}) }">Delete </a></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <a th:href="@{/book/new}">Add new </a>
+</div>
+</body>
+</html>
+

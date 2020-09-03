@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <a href="/student/add" style="">Add</a>
+<br>
+   <table>
+       <tbody>
+       <tr th:each="student: ${list}">
+           <td th:text="${student.id}" />
+           <td th:text="${student.name}" />
+           <td th:text="${student.surname}" />
+           <td th:text="${student.fee}" />
+           <td th:text="${student.getAddress()}" />
+
+       </tr>
+
+       </tbody>
+   </table>
+</body>
+</html>

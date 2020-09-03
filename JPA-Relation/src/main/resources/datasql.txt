@@ -1,0 +1,22 @@
+select * from jparelation.addresses;
+select * from jparelation.users;
+
+select * from  jparelation.ITEMS;
+select * from jparelation.carts
+
+select * from jparelation.carts c
+join jparelation.items i
+on c.id=i.cart_id;
+
+
+select * from jparelation.employees;
+select * from jparelation.project;
+
+select * from jparelation.Employee_Project;
+
+select * from jparelation.employees e join
+ jparelation.Employee_Project ep
+on e.id=ep.employee_id
+join jparelation.project p
+on p.id=ep.project_id
+where e.id=2;
