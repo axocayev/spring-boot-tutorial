@@ -1,0 +1,33 @@
+[2020-09-20 13:26:19.034] [KHOJAYEV-PC] [main] INFO a.a.logging.LoggingApplication@logStarting:55 - Starting LoggingApplication on KHOJAYEV-PC with PID 13540 (E:\ATLAcademy\Java BE\project\spring-boot-logging\target\classes started by anarx in E:\ATLAcademy\Java BE\project\spring-boot-logging)
+[2020-09-20 13:26:19.034] [KHOJAYEV-PC] [main] INFO a.a.logging.LoggingApplication@logStartupProfileInfo:651 - No active profile set, falling back to default profiles: default
+[2020-09-20 13:26:20.299] [KHOJAYEV-PC] [main] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:108 - Tomcat initialized with port(s): 8080 (http)
+[2020-09-20 13:26:20.315] [KHOJAYEV-PC] [main] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2020-09-20 13:26:20.315] [KHOJAYEV-PC] [main] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2020-09-20 13:26:20.315] [KHOJAYEV-PC] [main] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[2020-09-20 13:26:20.404] [KHOJAYEV-PC] [main] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2020-09-20 13:26:20.404] [KHOJAYEV-PC] [main] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:285 - Root WebApplicationContext: initialization completed in 1314 ms
+[2020-09-20 13:26:20.548] [KHOJAYEV-PC] [main] INFO o.s.s.c.ThreadPoolTaskExecutor@initialize:181 - Initializing ExecutorService 'applicationTaskExecutor'
+[2020-09-20 13:26:20.668] [KHOJAYEV-PC] [main] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2020-09-20 13:26:20.676] [KHOJAYEV-PC] [main] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext@refresh:559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+[2020-09-20 13:26:20.676] [KHOJAYEV-PC] [main] INFO o.s.s.c.ThreadPoolTaskExecutor@shutdown:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-09-20 13:26:20.684] [KHOJAYEV-PC] [main] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Pausing ProtocolHandler ["http-nio-8080"]
+[2020-09-20 13:26:20.684] [KHOJAYEV-PC] [main] INFO o.a.catalina.core.StandardService@log:173 - Stopping service [Tomcat]
+[2020-09-20 13:26:20.716] [KHOJAYEV-PC] [main] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Stopping ProtocolHandler ["http-nio-8080"]
+[2020-09-20 13:26:20.716] [KHOJAYEV-PC] [main] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Destroying ProtocolHandler ["http-nio-8080"]
+[2020-09-20 13:26:20.720] [KHOJAYEV-PC] [main] INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener@logMessage:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2020-09-20 13:26:20.720] [KHOJAYEV-PC] [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter@report:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
